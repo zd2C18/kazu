@@ -1,0 +1,36 @@
+@charset "UTF-8";
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: #fff;
+  background-color: #000; }
+
+header {
+  height: 130px; }
+  header nav ul li a {
+    width: 150px;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #fff; }
+
+.container {
+  text-align: center; }
+
+.jumbotron {
+  height: 500px;
+  background: url("../images/top1.jpg") center no-repeat;
+  background-size: cover; }
+
+.catchphrase h2 {
+  font-size: 2.5em; }
+
+.pickup img {
+  width: 290px;
+  height: 290px;
+  object-fit: contain;
+  background-color: rgba(30, 30, 30, 0.5); }
+
+footer {
+  height: 250px;
+  background-color: #CCC; }
+
+/*# sourceMappingURL=style.css.map */
