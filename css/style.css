@@ -1,36 +1,60 @@
 @charset "UTF-8";
 body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 14px;
   color: #fff;
   background-color: #000; }
 
 header {
   height: 130px; }
+  header h1 {
+    width: 240px;
+    margin-top: 10px;
+    margin-left: 80px; }
   header nav ul li a {
-    width: 150px;
     margin-top: 40px;
-    font-size: 1em;
+    font-size: 1rem;
     color: #fff; }
 
 .container {
   text-align: center; }
 
+@media (min-width: 1200px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1366px) {
+  .container {
+    width: 1280px; } }
 .jumbotron {
   height: 500px;
   background: url("../images/top1.jpg") center no-repeat;
   background-size: cover; }
 
 .catchphrase h2 {
-  font-size: 2.5em; }
+  font-size: 2.5rem; }
 
 .pickup img {
   width: 290px;
-  height: 290px;
   object-fit: contain;
   background-color: rgba(30, 30, 30, 0.5); }
 
+.links img {
+  margin: auto;
+  width: 80%; }
+
 footer {
-  height: 250px;
-  background-color: #CCC; }
+  height: 300px;
+  margin-top: 20px;
+  background-color: #333; }
+  footer h2 {
+    font-size: 1.5rem; }
+  footer h3 {
+    margin: auto;
+    margin-top: 20px;
+    width: 100px; }
+  footer .footermap {
+    text-align: left; }
+    footer .footermap img {
+      width: 70%; }
 
 /*# sourceMappingURL=style.css.map */
