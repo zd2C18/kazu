@@ -1,28 +1,6 @@
 @charset "UTF-8";
 
 //base
-body {
-    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-    font-size: 14px;
-    color: #fff;
-    background-color: #000;
-}
-header {
-    height: 130px;
-    h1 {
-        width: 240px;
-        margin-top: 10px;
-        margin-left: 80px;
-    }
-    nav ul li a {
-        margin-top: 40px;
-        font-size: 1rem;
-        color: #fff;
-    }
-}
-.container {
-    text-align: center;
-}
 @media (min-width: 1200px) {
   .container {
     width: 970px;
@@ -33,55 +11,425 @@ header {
     width: 1280px;
   }
 }
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: #000;
+}
+.container {
+    text-align: center;
+    // border: 1px solid #f00;
+}
+.btn-warning {
+    background-color: orange;
+    &:hover {
+        background-color: lighten(orange, 10%);
+    }
+}
+//ヘッダー
+header {
+    .navbar-inverse {
+        background-color: #000;
+        background-image: none;
+        border: none;
+        margin-bottom: 0;
+        .nav li a {
+            color: #fff;
+            &:hover {
+                color: orange;
+                background-color: #333;
+            }
+        }
+    }
+    h1 {
+        width: 300px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 768px) {
+    header {
+        .navbar-inverse .nav {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            li {
+                display: table-cell;
+                float: none;
+                width: 16.66%;
+                border-left: 1px solid #666;
+                &:last-child {
+                    border-right: 1px solid #666;
+                }
+                a {
+                    color: #fff;
+                    &:hover {
+                        color: orange;
+                        background-color: #333;
+                    }
+                }
+            }
+        }
+        h1 {
+            margin-left: 80px;
+        }
+    }
+}
 
 //トップイメージ
-.jumbotron {
-    height: 500px;
-    background: url('../images/top1.jpg') center no-repeat;
-    background-size: cover;
+.hero {
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 //キャッチフレーズ
 .catchphrase {
+    margin-bottom: 100px;
     h2 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 768px) {
+    .catchphrase {
+        h2 {
+            font-size: 2.5rem;
+        }
     }
 }
 
+//slick
+.slider img {
+    height: 200px;
+}
 //おすすめメニュー
 .pickup {
+    margin-bottom: 100px;
+    h2 {
+        margin-bottom: 30px;
+    }
     img {
         width: 290px;
         object-fit: contain;
         background-color: rgba(30, 30, 30, 0.5);
     }
+    figcaption {
+        font-size: 1.7rem;
+    }
+    .btn {
+        margin-top: 20px;
+        width: 500px;
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .pickup {
+        .btn {
+            width: 300px;
+        }
+    }
+}
+
+//新着情報
+.news {
+    margin-bottom: 100px;
+    h2 {
+        margin-bottom: 30px;
+        display: none;
+    }
+    .bg {
+        // border: 1px solid #fff;
+    }
+    ul {
+        padding-left: 0;
+        li {
+            border-bottom: 1px dotted #ccc;
+            line-height: 3.5;
+            text-align: left;
+            list-style-type: none;
+        }
+    }
+    .otoku {
+        font-size: 2rem;
+    }
+    .motto {
+        text-align: right;
+        a {
+            font-size: 1.5rem;
+            color: #fff;
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+    .line {
+        $linegreen: #33af35;
+        background-color: $linegreen;
+        border-radius: 5px;
+        &:hover {
+            background-color: lighten($linegreen, 10%);
+        }
+        img {
+            height: 90px;
+        }
+    }
+    .btn {
+        margin-top: 10px;
+    }
+}
+
+//予約ボタン
+.yoyaku {
+    margin-bottom: 100px;
+    .btn {
+        width: 500px;
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .yoyaku {
+        .btn {
+            width: 300px;
+        }
+    }
 }
 
 //リンク
 .links {
+    margin-bottom: 50px;
+    h2 {
+        display: none;
+        margin-bottom: 30px;
+    }
     img {
         margin: auto;
+        margin-bottom: 20px;
         width: 80%;
+        &:hover {
+            width: 85%;
+        }
     }
 }
-
+@media (max-width: 768px) {
+    .links {
+        img {
+            width: 100%;
+            &:hover {
+                width: 100%;
+            }
+        }
+    }
+}
 //フッター
 footer {
-    height: 300px;
     margin-top: 20px;
     background-color: #333;
     h2 {
         font-size: 1.5rem;
     }
+    table {
+        font-size: 1.2rem;
+        // width: 500px;
+        margin: auto;
+        // line-height: 3;
+        td {
+            height: 40px;
+            text-align: left;
+            // border-bottom: 1px dotted #ccc;
+            &:nth-of-type(2) {
+                padding-left: 20px;
+            }
+        }
+    }
     h3 {
         margin: auto;
-        margin-top: 20px;
-        width: 100px;
+        margin-top: 15px;
+        width: 60px;
+        margin-bottom: 20px;
     }
-    .footermap {
+}
+
+//トップに戻るボタン
+$pagetopcolor: rgba(255,150,0, 0.5);
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80%;
+    a {
+        display: block;
+        background: $pagetopcolor;
+        color: rgba(255,255,255,0.8);
+        width: 100px;
+        height: 100px;
+        padding: 5px 0;
+        line-height: 0.5;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50px;
+        &:hover {
+            background: lighten($pagetopcolor, 20%);
+            text-decoration: none;
+        }
+    }
+}
+@media (max-width: 768px) {
+    #page-top {
+        bottom: 10px;
+        right: 10px;
+        .hideaa {
+            display: none;
+        }
+        a {
+            width: 80px;
+            height: 80px;
+            padding: 10px 0;
+            border-radius: 40px;
+        }
+    }
+}
+
+//新着情報ページ
+.news_index {
+    margin-bottom: 100px;
+    .container {
         text-align: left;
+        .row {
+            border: 1px dashed #ccc;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+//メニューページ
+.menu_index {
+    margin-bottom: 100px;
+    .accordion {
+        width: 100%;
+        padding-left: 0;
+        list-style-type: none;
+        .menu_name {
+            cursor: pointer;
+            border: 1px solid #f00;
+            background-color: orange;
+            padding: 15px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .wrap {
+            display: none;
+        }
         img {
-            width: 70%;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            li {
+                overflow: hidden;
+                text-align: left;
+                border-bottom: 1px dotted #ccc;
+                padding: 10px;
+                .food_name {
+                    float: left;
+                    width: 80%;
+                    font-size: 2rem;
+                }
+                .food_price {
+                    float: right;
+                    width: 20%;
+                    font-size: 2rem;
+                    text-align: right;
+                    color: orange;
+                }
+                .food_detail {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+
+//こだわりページ
+.kodawari {
+    .ryuuha+p, .tennai+p {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    article {
+        margin-bottom: 80px;
+        p {
+            font-size: 2rem;
+        }
+        img {
+            width: 800px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .kodawari {
+        h2 {
+            font-size: 2rem;
+        }
+        .ryuuha+p, .tennai+p {
+            font-size: 1.5rem;
+        }
+        article {
+            p {
+                font-size: 1.5rem;
+            }
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+//地図ページ
+.map {
+    margin-bottom: 100px;
+    table {
+        display: block;
+        width: 100%;
+        margin: 0 auto 0 auto;
+        text-align: left;
+        td {
+            padding-left: 10px;
+            line-height: 2;
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+    .address {
+        text-align: left;
+        margin-top: 30px;
+    }
+}
+.coupon {
+    margin-bottom: 100px;
+    .coupon_paper {
+        background-image: url(../images/washi.jpg);
+        width: 100%;
+        height: 390px;
+        padding-top: 30px;
+        margin-top: 30px;
+        .coupon1, .coupon2 {
+            width: 600px;
+            height: 150px;
+            margin: 0 auto 30px;
+            background-color: #fff;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .coupon {
+        .coupon_paper {
+            .coupon1, .coupon2 {
+                width: 82%;
+            }
         }
     }
 }

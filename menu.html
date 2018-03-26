@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-tdeme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/slick.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -42,66 +43,85 @@
             </nav>
         </div>
     </header>
-    <div class="hero">
-        <p><img src="images/top2.jpg" alt="" class="img-responsive"></p>
+    <div class="slider">
+        <div><img src="images/slick1.jpg" alt=""></div>
+        <div><img src="images/slick2.jpg" alt=""></div>
+        <div><img src="images/slick3.jpg" alt=""></div>
+        <div><img src="images/slick4.jpg" alt=""></div>
+        <div><img src="images/slick5.jpg" alt=""></div>
+        <div><img src="images/slick6.jpg" alt=""></div>
+        <div><img src="images/slick7.jpg" alt=""></div>
+        <div><img src="images/slick8.jpg" alt=""></div>
     </div>
+    <h2>メニュー</h2>
     <main>
-        <section class="catchphrase">
+        <section class="menu_index">
+            <script src="js/panel.js"></script>
             <div class="container">
-                <h2>本格 広島焼き・月島もんじゃを 戸越で満喫</h2>
-                <p>戸越公園駅から徒歩3分！！</p>
-                <p><img src="images/map.jpg" alt=""></p>
-            </div>
-        </section>
-        <section class="pickup">
-            <div class="container">
-                <h2>おすすめメニュー</h2>
-                <div class="row">
-                    <div class="col-xs-6 col-md-3">
-                        <figure><img src="images/food1.jpg" alt="">
-                            <figcaption>広島焼</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <figure><img src="images/food12.jpg" alt="">
-                            <figcaption>海鮮のお好み焼</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <figure><img src="images/food10.jpg" alt="">
-                            <figcaption>カマンベールダブルチーズもんじゃ</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <figure><img src="images/food5.jpg" alt="">
-                            <figcaption>とんぺい焼</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-warning">メニューをもっと見る</button>
-            </div>
-        </section>
-        <section class="news">
-            <div class="container">
-                <h2>新着情報</h2>
-                <div class="row">
-                    <div class="col-xs-12 col-md-6 bg">
-                        <p class="otoku">～新着情報～</p>
+                <ul class="accordion">
+                    <li>
+                        <p class="menu_name"><span>コース</span></p>
                         <ul>
-                            <li><time datetime="2018-03-12">2018年03月12日</time>新メニュー追加しました</li>
-                            <li><time datetime="2018-03-12">2018年03月12日</time>新メニュー追加しました</li>
-                            <li><time datetime="2018-03-12">2018年03月12日</time>新メニュー追加しました</li>
-                            <li><time datetime="2018-03-12">2018年03月12日</time>新メニュー追加しました</li>
+                            <li><a href=" #">定番宴会コース</a></li>
+                            <li><a href=" #">贅沢コース</a></li>
                         </ul>
-                        <p class="motto"><a href="#">もっと見る</a></p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <p class="otoku">~お得情報~</p>
-                        <a href="#"><p class="line"><img src="images/button_line.png" alt=""></p></a>
-                        <button type="button" class="btn btn-default btn-lg btn-block">ホームページ限定クーポン</button>
-                        <button type="button" class="btn btn-default btn-lg btn-block">雨の日はポイント2倍！</button>
-                    </div>
-                </div>
+                    </li>
+                    <li>
+                        <p class="menu_name"><span>広島焼き</span></p>
+                        <div class="wrap">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-8">
+                                    <ul>
+                                        <li>
+                                            <div class="food_name"><a href=" #">豚玉</a></div>
+                                            <div class="food_price">￥950</div>
+                                            <div class="food_detail">広島直送麺使用！</div>
+                                        </li>
+                                        <li><a href=" #">海鮮広島焼き</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <div class="row">
+                                        <div class="col-xs-6 col-md-12">
+                                            <img src="images/food1.jpg" alt="">
+                                        </div>
+                                        <div class="col-xs-6 col-md-12">
+                                            <img src="images/food2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="menu_name"><span>お好み焼き</span></p>
+                        <ul>
+                            <li><a href=" #">海鮮のお好み焼き</a></li>
+                            <li><a href=" #">極太モダン焼き</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="menu_name"><span>もんじゃ焼き</span></p>
+                        <ul>
+                            <li><a href=" #">まるごとカマンベールもんじゃ</a></li>
+                            <li><a href=" #">明太子もちもんじゃ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="menu_name"><span>一品料理・デザート</span></p>
+                        <ul>
+                            <li><a href=" #">本日のおすすめアイスクリーム</a></li>
+                            <li><a href=" #">なつかしのあんこまき</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p class="menu_name"><span>ドリンク</span></p>
+                        <ul>
+                            <li><a href=" #">キリン一番搾り</a></li>
+                            <li><a href=" #">水</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="yoyaku">
@@ -167,5 +187,6 @@
             <h3><img src="images/logo.png" alt=""></h3>
         </div>
     </footer>
+    <script src="js/slick.js"></script>
 </body>
 </html>

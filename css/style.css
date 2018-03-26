@@ -1,60 +1,296 @@
 @charset "UTF-8";
-body {
-  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-size: 14px;
-  color: #fff;
-  background-color: #000; }
-
-header {
-  height: 130px; }
-  header h1 {
-    width: 240px;
-    margin-top: 10px;
-    margin-left: 80px; }
-  header nav ul li a {
-    margin-top: 40px;
-    font-size: 1rem;
-    color: #fff; }
-
-.container {
-  text-align: center; }
-
 @media (min-width: 1200px) {
   .container {
     width: 970px; } }
 @media (min-width: 1366px) {
   .container {
     width: 1280px; } }
-.jumbotron {
-  height: 500px;
-  background: url("../images/top1.jpg") center no-repeat;
-  background-size: cover; }
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000; }
 
-.catchphrase h2 {
-  font-size: 2.5rem; }
+.container {
+  text-align: center; }
 
-.pickup img {
-  width: 290px;
-  object-fit: contain;
-  background-color: rgba(30, 30, 30, 0.5); }
+.btn-warning {
+  background-color: orange; }
+  .btn-warning:hover {
+    background-color: #ffb733; }
 
-.links img {
-  margin: auto;
-  width: 80%; }
+header .navbar-inverse {
+  background-color: #000;
+  background-image: none;
+  border: none;
+  margin-bottom: 0; }
+  header .navbar-inverse .nav li a {
+    color: #fff; }
+    header .navbar-inverse .nav li a:hover {
+      color: orange;
+      background-color: #333; }
+header h1 {
+  width: 300px;
+  margin-top: 10px; }
 
+@media (min-width: 768px) {
+  header .navbar-inverse .nav {
+    display: table;
+    table-layout: fixed;
+    width: 100%; }
+    header .navbar-inverse .nav li {
+      display: table-cell;
+      float: none;
+      width: 16.66%;
+      border-left: 1px solid #666; }
+      header .navbar-inverse .nav li:last-child {
+        border-right: 1px solid #666; }
+      header .navbar-inverse .nav li a {
+        color: #fff; }
+        header .navbar-inverse .nav li a:hover {
+          color: orange;
+          background-color: #333; }
+  header h1 {
+    margin-left: 80px; } }
+.hero {
+  width: 100%;
+  margin-bottom: 50px; }
+
+.catchphrase {
+  margin-bottom: 100px; }
+  .catchphrase h2 {
+    font-size: 3.5rem; }
+  .catchphrase p {
+    font-size: 2rem; }
+
+@media (max-width: 768px) {
+  .catchphrase h2 {
+    font-size: 2.5rem; } }
+.slider img {
+  height: 200px; }
+
+.pickup {
+  margin-bottom: 100px; }
+  .pickup h2 {
+    margin-bottom: 30px; }
+  .pickup img {
+    width: 290px;
+    object-fit: contain;
+    background-color: rgba(30, 30, 30, 0.5); }
+  .pickup figcaption {
+    font-size: 1.7rem; }
+  .pickup .btn {
+    margin-top: 20px;
+    width: 500px;
+    font-size: 2.5rem; }
+
+@media (max-width: 768px) {
+  .pickup .btn {
+    width: 300px; } }
+.news {
+  margin-bottom: 100px; }
+  .news h2 {
+    margin-bottom: 30px;
+    display: none; }
+  .news ul {
+    padding-left: 0; }
+    .news ul li {
+      border-bottom: 1px dotted #ccc;
+      line-height: 3.5;
+      text-align: left;
+      list-style-type: none; }
+  .news .otoku {
+    font-size: 2rem; }
+  .news .motto {
+    text-align: right; }
+    .news .motto a {
+      font-size: 1.5rem;
+      color: #fff; }
+      .news .motto a:hover {
+        color: orange; }
+  .news .line {
+    background-color: #33af35;
+    border-radius: 5px; }
+    .news .line:hover {
+      background-color: #4bca4d; }
+    .news .line img {
+      height: 90px; }
+  .news .btn {
+    margin-top: 10px; }
+
+.yoyaku {
+  margin-bottom: 100px; }
+  .yoyaku .btn {
+    width: 500px;
+    font-size: 2.5rem; }
+
+@media (max-width: 768px) {
+  .yoyaku .btn {
+    width: 300px; } }
+.links {
+  margin-bottom: 50px; }
+  .links h2 {
+    display: none;
+    margin-bottom: 30px; }
+  .links img {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%; }
+    .links img:hover {
+      width: 85%; }
+
+@media (max-width: 768px) {
+  .links img {
+    width: 100%; }
+    .links img:hover {
+      width: 100%; } }
 footer {
-  height: 300px;
   margin-top: 20px;
   background-color: #333; }
   footer h2 {
     font-size: 1.5rem; }
+  footer table {
+    font-size: 1.2rem;
+    margin: auto; }
+    footer table td {
+      height: 40px;
+      text-align: left; }
+      footer table td:nth-of-type(2) {
+        padding-left: 20px; }
   footer h3 {
     margin: auto;
-    margin-top: 20px;
-    width: 100px; }
-  footer .footermap {
+    margin-top: 15px;
+    width: 60px;
+    margin-bottom: 20px; }
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80%; }
+  #page-top a {
+    display: block;
+    background: rgba(255, 150, 0, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    width: 100px;
+    height: 100px;
+    padding: 5px 0;
+    line-height: 0.5;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px; }
+    #page-top a:hover {
+      background: rgba(255, 192, 102, 0.5);
+      text-decoration: none; }
+
+@media (max-width: 768px) {
+  #page-top {
+    bottom: 10px;
+    right: 10px; }
+    #page-top .hideaa {
+      display: none; }
+    #page-top a {
+      width: 80px;
+      height: 80px;
+      padding: 10px 0;
+      border-radius: 40px; } }
+.news_index {
+  margin-bottom: 100px; }
+  .news_index .container {
     text-align: left; }
-    footer .footermap img {
-      width: 70%; }
+    .news_index .container .row {
+      border: 1px dashed #ccc;
+      margin-bottom: 30px; }
+
+.menu_index {
+  margin-bottom: 100px; }
+  .menu_index .accordion {
+    width: 100%;
+    padding-left: 0;
+    list-style-type: none; }
+    .menu_index .accordion .menu_name {
+      cursor: pointer;
+      border: 1px solid #f00;
+      background-color: orange;
+      padding: 15px;
+      font-size: 2rem;
+      font-weight: bold; }
+    .menu_index .accordion .wrap {
+      display: none; }
+    .menu_index .accordion img {
+      margin-bottom: 20px; }
+    .menu_index .accordion ul {
+      list-style-type: none;
+      padding-left: 0; }
+      .menu_index .accordion ul li {
+        overflow: hidden;
+        text-align: left;
+        border-bottom: 1px dotted #ccc;
+        padding: 10px; }
+        .menu_index .accordion ul li .food_name {
+          float: left;
+          width: 80%;
+          font-size: 2rem; }
+        .menu_index .accordion ul li .food_price {
+          float: right;
+          width: 20%;
+          font-size: 2rem;
+          text-align: right;
+          color: orange; }
+        .menu_index .accordion ul li .food_detail {
+          color: #ccc; }
+
+.kodawari .ryuuha + p, .kodawari .tennai + p {
+  font-size: 2rem;
+  margin-bottom: 50px; }
+.kodawari article {
+  margin-bottom: 80px; }
+  .kodawari article p {
+    font-size: 2rem; }
+  .kodawari article img {
+    width: 800px; }
+
+@media (max-width: 768px) {
+  .kodawari h2 {
+    font-size: 2rem; }
+  .kodawari .ryuuha + p, .kodawari .tennai + p {
+    font-size: 1.5rem; }
+  .kodawari article p {
+    font-size: 1.5rem; }
+  .kodawari article img {
+    width: 80%; } }
+.map {
+  margin-bottom: 100px; }
+  .map table {
+    display: block;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    text-align: left; }
+    .map table td {
+      padding-left: 10px;
+      line-height: 2; }
+      .map table td:first-child {
+        padding-left: 0; }
+  .map .address {
+    text-align: left;
+    margin-top: 30px; }
+
+.coupon {
+  margin-bottom: 100px; }
+  .coupon .coupon_paper {
+    background-image: url(../images/washi.jpg);
+    width: 100%;
+    height: 390px;
+    padding-top: 30px;
+    margin-top: 30px; }
+    .coupon .coupon_paper .coupon1, .coupon .coupon_paper .coupon2 {
+      width: 600px;
+      height: 150px;
+      margin: 0 auto 30px;
+      background-color: #fff; }
+
+@media (max-width: 768px) {
+  .coupon .coupon_paper .coupon1, .coupon .coupon_paper .coupon2 {
+    width: 82%; } }
 
 /*# sourceMappingURL=style.css.map */
